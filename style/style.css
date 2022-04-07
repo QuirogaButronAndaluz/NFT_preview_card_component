@@ -71,6 +71,7 @@ body {
 
 .profile-card-bottom_creation span:nth-child(3) {
     color: white;
+    margin-left: 10px;
 }
 
 .profile-card-bottom_dias {
@@ -95,18 +96,18 @@ body {
     opacity: 0;
 }
 
-.profile-card-top img:hover {
-    filter: opacity(0.4) drop-shadow(0 0 0 var(--Cyan));
-}
-
 .profile-card-top img:hover~.profile-card-top-eye {
     opacity: 1;
 }
 
-.profile-card-bottom__datos-profile div span:hover {
+.profile-card-bottom_equi div span:hover {
     color: var(--Cyan);
 }
 
-.profile-card-bottom__informacion span:nth-child(3):hover {
+.profile-card-bottom_creation span:nth-child(3):hover {
     color: var(--Cyan);
+}
+
+.profile-card-top img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--Cyan));
 }
