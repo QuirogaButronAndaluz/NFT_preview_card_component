@@ -1,0 +1,112 @@
+:root {
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very_dark_blue_main_BG: hsl(217, 54%, 11%);
+    --Very_dark_blue_card_BG: hsl(216, 50%, 16%);
+    --Very_dark_blue_line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Name_status_Font_size: 18px;
+}
+
+html,
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Very_dark_blue_main_BG);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-card {
+    background: var(--Very_dark_blue_card_BG);
+    border-radius: 20px;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.profile-card-top img {
+    max-width: 85%;
+    border-radius: 20px;
+}
+
+.profile-card-bottom_creation img {
+    max-width: 10%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.profile-card-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.profile-card-bottom_equi div span {
+    color: rgb(255, 254, 254);
+}
+
+.profile-card-bottom_equi p {
+    color: var(--Soft_blue);
+}
+
+.color_letra span {
+    color: var(--Cyan);
+}
+
+.color_letra2 span {
+    color: var(--Soft_blue);
+}
+
+.profile-card-bottom_creation span:nth-child(2) {
+    color: var(--Soft_blue);
+    margin-left: 10px;
+}
+
+.profile-card-bottom_creation span:nth-child(3) {
+    color: white;
+}
+
+.profile-card-bottom_dias {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.profile-card-bottom {
+    padding: 20px;
+}
+
+.profile-card-bottom_creation {
+    padding-top: 10px;
+    border-top: 1px solid var(--Very_dark_blue_line);
+    display: flex;
+    align-items: center;
+}
+
+.profile-card-top-eye {
+    position: absolute;
+    opacity: 0;
+}
+
+.profile-card-top img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--Cyan));
+}
+
+.profile-card-top img:hover~.profile-card-top-eye {
+    opacity: 1;
+}
+
+.profile-card-bottom__datos-profile div span:hover {
+    color: var(--Cyan);
+}
+
+.profile-card-bottom__informacion span:nth-child(3):hover {
+    color: var(--Cyan);
+}
