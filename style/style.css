@@ -20,7 +20,36 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /*empiece desde arriba*/
+    align-items: center;
+}
+
+.button {
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid rgb(246, 246, 246);
+    color: var(--White);
+    background-color: var(--Very_dark_blue_main_BG);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #650562;
+    box-shadow: 0 0 10px #07f4e0, 0 0 40px #07f4e0, 0 0 80px #07f4e0;
+    transition-delay: 0s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.CreateButton {
+    margin: 10px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .profile-card {
@@ -28,6 +57,7 @@ body {
     border-radius: 20px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .profile-card-top img {
